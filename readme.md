@@ -88,4 +88,14 @@ aws sns subscribe \
     --notification-endpoint your-email@example.com
 ```
 
+# Result
+```sh
+
+  Alert: RDS Storage Limit Reached!
+    RDS Instance CPU Usage: 1.84%
+    Remaining RDS Storage: 16.94 GB
+    EC2 Instance CPU Usage: 0.93%
+
+```
+
 ---
