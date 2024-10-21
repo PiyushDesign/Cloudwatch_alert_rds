@@ -6,9 +6,9 @@ cloudwatch = boto3.client('cloudwatch')
 sns = boto3.client('sns')
 
 # Replace with your instance and RDS identifiers
-INSTANCE_ID = 'i-0193541eaeec4d1e0'  # Your EC2 instance ID
-RDS_INSTANCE_ID = 'database-1'  # Your RDS instance ID
-SNS_TOPIC_ARN = 'arn:aws:sns:ap-south-1:533267114782:RDSStorageAlerts'  # Your SNS topic ARN
+INSTANCE_ID = ''  # Your EC2 instance ID
+RDS_INSTANCE_ID = ''  # Your RDS instance ID
+SNS_TOPIC_ARN = ''  # Your SNS topic ARN
 
 def get_cloudwatch_metric(namespace, metric_name, dimensions, statistic='Average'):
     response = cloudwatch.get_metric_statistics(
